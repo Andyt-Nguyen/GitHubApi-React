@@ -1,23 +1,16 @@
 import React from 'react';
 
-const UserList = () => {
+const UserList = (props) => {
 	return (
-		<div style={{display:"flex", justifyContent:"center"}}>
-
-			<div className="card" style={{display:'flex', flexDirection:"column", alignItems:"center", width:"35%"}}>
-
-				<div>
-					<h3 className="center">Name</h3>
-					<img src="https://placehold.it/200"/>
+		<div className="card" style={{width:"100%", display:'flex'}}>
+			<img width="25%" height="25%" src={props.avatar_url} />
+			<div>
+				<div className="card">
+					<h5>UserName: {props.login.toUpperCase()}</h5>
+					<h5>Name: {props.name}</h5>
+					<h5>Followers: {props.followers}</h5>
+					<h5>Following:{props.following}</h5>
 				</div>
-
-
-				<div>
-					<h4>Company</h4>
-					<h4>url</h4>
-					<h4>Blog</h4>
-				</div>
-
 			</div>
 		</div>
 	);

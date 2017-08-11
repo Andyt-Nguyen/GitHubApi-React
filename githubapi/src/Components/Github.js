@@ -18,12 +18,12 @@ class GitHub extends Component {
 
 	render() {
 		return (
-			<div>
-				<h1 className="center">Github Profile</h1>
+			<div className="container">
+				<h1 className="center">Github Profiles</h1>
 				<div>
 					<Users user={this.state.person} />
 				</div>
-				<Form getUser={this.handleUser.bind(this)}/>
+				<Form getUser={this.handleUser.bind(this)} />
 			</div>
 		)
 	}
