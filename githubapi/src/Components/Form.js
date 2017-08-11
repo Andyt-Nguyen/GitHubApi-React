@@ -20,6 +20,7 @@ class Form extends Component {
 		e.preventDefault();
 		let promise = axios.get(`https://api.github.com/users/${this.state.person}`);
 		promise.then( user => this.props.getUser(user.data));
+		this.setState({person: ""});
 	}
 
 	render() {
