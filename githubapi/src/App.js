@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Github from './Components/GitHub';
+import GitHub from './Components/Github';
+import '../node_modules/materialize-css/dist/css/materialize.min.css'
 import './App.css';
 
 class App extends Component {
